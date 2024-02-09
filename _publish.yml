@@ -1,0 +1,4 @@
+- source: project
+  quarto-pub:
+    - id: 5bccbd38-de9d-41f8-a665-c6845e3c7881
+      url: 'https://mara.quarto.pub/quarto-figcap-demo'
