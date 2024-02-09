@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "quarto-figcap-demo",
+    "section": "",
+    "text": "Figure in .column-body-outset div. The figcaption element does not inherit .column-body-outset, which is applied only to the image itself.1\n\n\n\n\n\n\n\nFigure 1: Figure from AOM Explainer shows HTML translated into DOM tree translated into visual UI and accessibility tree."
+  },
+  {
+    "objectID": "index.html#the-problemcurrent-behavior",
+    "href": "index.html#the-problemcurrent-behavior",
+    "title": "quarto-figcap-demo",
+    "section": "",
+    "text": "Figure in .column-body-outset div. The figcaption element does not inherit .column-body-outset, which is applied only to the image itself.1\n\n\n\n\n\n\n\nFigure 1: Figure from AOM Explainer shows HTML translated into DOM tree translated into visual UI and accessibility tree."
+  },
+  {
+    "objectID": "index.html#appearance-in-rstudio-visual-editor",
+    "href": "index.html#appearance-in-rstudio-visual-editor",
+    "title": "quarto-figcap-demo",
+    "section": "Appearance in RStudio visual editor",
+    "text": "Appearance in RStudio visual editor\nIf this behavior is intended, I would expect it to look different in the visual editor (the figure caption appears inside of what I would think would translate into the &lt;div class=\"column-body-outset\"&gt;).\n\n\n\n\n\n\nFigure 2: Image and caption inside of the column-body-outset as they appear in the RStudio visual ediotr."
+  },
+  {
+    "objectID": "index.html#desired-output",
+    "href": "index.html#desired-output",
+    "title": "quarto-figcap-demo",
+    "section": "Desired output",
+    "text": "Desired output\nHere’s how the same element would look rendered if I add column-body-outset to the &lt;figcaption&gt;’s classes (outlines added to make it easier to see).\n\n\n\n\n\n\nFigure 3: Screenshot of page with caption aligned with image so both have column-body-outset."
+  },
+  {
+    "objectID": "index.html#footnotes",
+    "href": "index.html#footnotes",
+    "title": "quarto-figcap-demo",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nImage used is from the Appendices of The Accessibility Object Model: Explainer by Alice Boxhall, James Craig, Dominic Mazzoni, and Alexander Surkov (2021).↩︎"
+  }
+]

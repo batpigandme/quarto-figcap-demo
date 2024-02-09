@@ -1,0 +1,26 @@
+---
+title: "quarto-figcap-demo"
+---
+
+## The “problem”/current behavior
+
+Figure in `.column-body-outset` div.
+The `figcaption` element does not inherit `.column-body-outset`, which is applied only to the image itself.[^1]
+
+::: column-body-outset
+![Figure from AOM Explainer shows HTML translated into DOM tree translated into visual UI and accessibility tree.](images/wicg-aom-DOM-a11y-tree-min.png){#fig-aom-dom-a11y-tree fig-alt="HTML translated into DOM tree translated into visual UI and accessibility tree."}
+:::
+
+## Appearance in RStudio visual editor
+
+If this behavior is intended, I would expect it to look different in the visual editor (the figure caption appears inside of what I would think would translate into the `<div class="column-body-outset">`).
+
+![Image and caption inside of the column-body-outset as they appear in the RStudio visual ediotr.](images/fig-w-column-body-outset-in-rstudio-min.png){#fig-figcaption-rstudio fig-alt="Image and caption inside of the column-body-outset as they appear in the RStudio visual ediotr."}
+
+## Desired output
+
+Here's how the same element would look rendered if I add `column-body-outset` to the `<figcaption>`'s classes (outlines added to make it easier to see).
+
+![Screenshot of page with caption aligned with image so both have column-body-outset.](images/figcaption-column-body-outset-min.png){#fig-figcaption-outset fig-alt="Figure with caption aligned with image so both have column-body-outset. Annotation added to show that there is an Image with class  .column-body-outset, and, below .column-body-outset class manually applied to figcaption."}
+
+[^1]: Image used is from the [Appendices](https://wicg.github.io/aom/explainer.html#background-dom-tree-accessibility-tree-and-platform-accessibility-apis) of [The Accessibility Object Model: Explainer](https://wicg.github.io/aom/explainer.html) by Alice Boxhall, James Craig, Dominic Mazzoni, and Alexander Surkov (2021).
