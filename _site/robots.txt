@@ -1,1 +1,1 @@
-Sitemap: https://5bccbd38-de9d-41f8-a665-c6845e3c7881.netlify.app/sitemap.xml
+Sitemap: https://mara.quarto.pub/quarto-figcap-demo/sitemap.xml

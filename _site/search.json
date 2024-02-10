@@ -28,6 +28,13 @@
     "text": "Desired output\nHere’s how the same element would look rendered if I add column-body-outset to the &lt;figcaption&gt;’s classes (outlines added to make it easier to see).\n\n\n\n\n\n\nFigure 3: Screenshot of page with caption aligned with image so both have column-body-outset."
   },
   {
+    "objectID": "index.html#more-examples",
+    "href": "index.html#more-examples",
+    "title": "quarto-figcap-demo",
+    "section": "More examples",
+    "text": "More examples\nThe image below is in a div with .column-page-inset.\n\n\n\n\n\n\n\nFigure 4: Cartoon skulls.\n\n\n\n\nNext, we’ve got one in .column-page-left.\n\n\n\n\n\n\n\nFigure 5: Cartoon grass.\n\n\n\n\nAnd here come the skulls again, but with .column-screen-right.\n\n\n\n\n\n\n\nFigure 6: Cartoon skulls in little decorative circles.\n\n\n\n\nNow .column-screen-left.\n\n\n\n\n\n\n\nFigure 7: Cartoon skulls in little decorative circles."
+  },
+  {
     "objectID": "index.html#footnotes",
     "href": "index.html#footnotes",
     "title": "quarto-figcap-demo",

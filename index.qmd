@@ -23,4 +23,30 @@ Here's how the same element would look rendered if I add `column-body-outset` to
 
 ![Screenshot of page with caption aligned with image so both have column-body-outset.](images/figcaption-column-body-outset-min.png){#fig-figcaption-outset fig-alt="Figure with caption aligned with image so both have column-body-outset. Annotation added to show that there is an Image with class  .column-body-outset, and, below .column-body-outset class manually applied to figcaption."}
 
+## More examples
+
+The image below is in a div with `.column-page-inset`.
+
+::: column-page-inset
+![Cartoon skulls.](images/skulls-in-circles-min.png){#fig-skulls fig-alt="Cartoon skulls in decorative circles."}
+:::
+
+Next, we've got one in `.column-page-left`.
+
+::: column-page-left
+![Cartoon grass.](images/grass-turquoise-background-min.png){#fig-grass fig-alt="Cartoon green grass on a turquoise background."}
+:::
+
+And here come the skulls again, but with `.column-screen-right`**.**
+
+::: column-screen-right
+![Cartoon skulls in little decorative circles.](images/skulls-in-circles-min.png){#fig-skulls-2 fig-alt="Cartoon skulls in little decorative circles."}
+:::
+
+Now `.column-screen-left`.
+
+::: column-screen-left
+![Cartoon skulls in little decorative circles.](images/skulls-in-circles-min.png){#fig-skulls-3 fig-alt="Cartoon skulls in little decorative circles."}
+:::
+
 [^1]: Image used is from the [Appendices](https://wicg.github.io/aom/explainer.html#background-dom-tree-accessibility-tree-and-platform-accessibility-apis) of [The Accessibility Object Model: Explainer](https://wicg.github.io/aom/explainer.html) by Alice Boxhall, James Craig, Dominic Mazzoni, and Alexander Surkov (2021).
