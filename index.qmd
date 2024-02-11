@@ -49,4 +49,22 @@ Now `.column-screen-left`.
 ![Cartoon skulls in little decorative circles.](images/skulls-in-circles-min.png){#fig-skulls-3 fig-alt="Cartoon skulls in little decorative circles."}
 :::
 
+### Examples with grid columns
+
+::: column-page
+::: {.grid style="--bs-columns: 2;"}
+<div>
+
+![Screenshot of un-tidied bibliography entries in BibTex Tidy web interface.](/images/screenshot-bibtex-tidy-before-min.png){#fig-bibtex-before fig-alt="Screenshot of un-tidied bibliography entries in BibTex Tidy web interface."}
+
+</div>
+
+<div>
+
+![Screenshot of same bibliography entries after tidying in BibTex Tidy web interface.](/images/screenshot-bibtex-tidy-after-min.png){#fig-bibtex-after fig-alt="Screenshot of same bibliography entries after tidying in BibTex Tidy web interface."}
+
+</div>
+:::
+:::
+
 [^1]: Image used is from the [Appendices](https://wicg.github.io/aom/explainer.html#background-dom-tree-accessibility-tree-and-platform-accessibility-apis) of [The Accessibility Object Model: Explainer](https://wicg.github.io/aom/explainer.html) by Alice Boxhall, James Craig, Dominic Mazzoni, and Alexander Surkov (2021).

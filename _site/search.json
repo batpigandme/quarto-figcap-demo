@@ -32,7 +32,7 @@
     "href": "index.html#more-examples",
     "title": "quarto-figcap-demo",
     "section": "More examples",
-    "text": "More examples\nThe image below is in a div with .column-page-inset.\n\n\n\n\n\n\n\nFigure 4: Cartoon skulls.\n\n\n\n\nNext, we’ve got one in .column-page-left.\n\n\n\n\n\n\n\nFigure 5: Cartoon grass.\n\n\n\n\nAnd here come the skulls again, but with .column-screen-right.\n\n\n\n\n\n\n\nFigure 6: Cartoon skulls in little decorative circles.\n\n\n\n\nNow .column-screen-left.\n\n\n\n\n\n\n\nFigure 7: Cartoon skulls in little decorative circles."
+    "text": "More examples\nThe image below is in a div with .column-page-inset.\n\n\n\n\n\n\n\nFigure 4: Cartoon skulls.\n\n\n\n\nNext, we’ve got one in .column-page-left.\n\n\n\n\n\n\n\nFigure 5: Cartoon grass.\n\n\n\n\nAnd here come the skulls again, but with .column-screen-right.\n\n\n\n\n\n\n\nFigure 6: Cartoon skulls in little decorative circles.\n\n\n\n\nNow .column-screen-left.\n\n\n\n\n\n\n\nFigure 7: Cartoon skulls in little decorative circles.\n\n\n\n\n\nExamples with grid columns\n\n\n\n\n\n\n\n\n\nFigure 8: Screenshot of un-tidied bibliography entries in BibTex Tidy web interface.\n\n\n\n\n\n\n\n\n\n\n\nFigure 9: Screenshot of same bibliography entries after tidying in BibTex Tidy web interface."
   },
   {
     "objectID": "index.html#footnotes",
