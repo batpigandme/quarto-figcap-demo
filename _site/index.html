@@ -73,6 +73,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -307,9 +310,7 @@ Figure&nbsp;9: Screenshot of same bibliography entries after tidying in BibTex T
 <section id="margin-figures-and-images" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="margin-figures-and-images">Margin figures and images</h3>
 <p>Per <a href="https://github.com/quarto-dev/quarto-cli/issues/8666#issuecomment-1938340014">OrenBochman’s comment in quarto-cli Issue #8666</a>, the captions for images placed in margins using <code>.column-margin</code> are appearing in the body column with Quarto version 1.4.</p>
-<div class="sourceCode" id="cb1" title="Example markdown syntax"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="al">![a caption](file_name.png)</span>{.column-margin}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-
-
+<div class="sourceCode" id="cb1" data-filename="Example markdown syntax"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="al">![a caption](file_name.png)</span>{.column-margin}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 <div class="no-row-height column-margin column-container"><div id="fig-green-grass" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Green cartoon grass on a turquoise background.">
 <figure class="quarto-float quarto-float-fig figure">
@@ -318,6 +319,19 @@ Figure&nbsp;9: Screenshot of same bibliography entries after tidying in BibTex T
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-green-grass-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;10: Green cartoon grass on a turquoise background.
+</figcaption>
+</figure>
+</div></div><p>Now let’s see how it works with the <code>lightbox</code> class applied to <a href="#fig-green-grass-2" class="quarto-xref">Figure&nbsp;11</a>:</p>
+
+
+
+<div class="no-row-height column-margin column-container"><div id="fig-green-grass-2" class="lightbox quarto-figure quarto-figure-center quarto-float anchored" alt="Green cartoon grass on a turquoise background.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-green-grass-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/grass-turquoise-background-min.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;11: Green cartoon grass on a turquoise background."><img src="images/grass-turquoise-background-min.png" class="img-fluid figure-img" alt="Green cartoon grass on a turquoise background."></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-green-grass-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;11: Green cartoon grass on a turquoise background.
 </figcaption>
 </figure>
 </div></div></section>
@@ -718,6 +732,31 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"zoom","descPosition":"bottom","openEffect":"zoom","loop":false});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
 
 
 

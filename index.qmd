@@ -71,10 +71,14 @@ Now `.column-screen-left`.
 
 Per [OrenBochman's comment in quarto-cli Issue #8666](https://github.com/quarto-dev/quarto-cli/issues/8666#issuecomment-1938340014), the captions for images placed in margins using `.column-margin` are appearing in the body column with Quarto version 1.4.
 
-``` {.markdown title="Example markdown syntax"}
+``` {.markdown Filename="Example markdown syntax"}
 ![a caption](file_name.png){.column-margin}
 ```
 
 ![Green cartoon grass on a turquoise background.](images/grass-turquoise-background-min.png){#fig-green-grass .column-margin fig-alt="Green cartoon grass on a turquoise background."}
+
+Now let's see how it works with the `lightbox` class applied to @fig-green-grass-2:
+
+![Green cartoon grass on a turquoise background.](images/grass-turquoise-background-min.png){#fig-green-grass-2 .lightbox .column-margin fig-alt="Green cartoon grass on a turquoise background."}
 
 [^1]: Image used is from the [Appendices](https://wicg.github.io/aom/explainer.html#background-dom-tree-accessibility-tree-and-platform-accessibility-apis) of [The Accessibility Object Model: Explainer](https://wicg.github.io/aom/explainer.html) by Alice Boxhall, James Craig, Dominic Mazzoni, and Alexander Surkov (2021).
